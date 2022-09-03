@@ -1,0 +1,29 @@
+.classe1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.classe2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.classe3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#alinhar {
+    align-items: stretch;
+}
+
+.divAparece {
+    display: block;
+}
+
+.divSome {
+    display: none;
+}

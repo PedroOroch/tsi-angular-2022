@@ -1,0 +1,25 @@
+<br>
+
+
+<div>
+    <button (click)="abas('divAparece', 'divSome', 'divSome');">
+      ABA 1
+    </button>
+    <button (click)="abas('divSome', 'divAparece', 'divSome');">
+      ABA 2
+    </button>
+    <button (click)="abas('divSome', 'divSome', 'divAparece');">
+      ABA 3
+    </button>
+</div>
+
+<div id="alinhar">
+    <div [class]="div1" class="classe1">
+    </div>
+    <div [class]="div2" class="classe2">
+
+    </div>
+    <div [class]="div3" class="classe3">
+
+    </div>
+</div>
