@@ -1,0 +1,18 @@
+.mousePassa {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.mousePassa:hover {
+    border-radius: 30px;
+}
+
+.mouseOn {
+    background-color: crimson;
+}
+
+.mouseOff {
+    background-color: blueviolet;
+}
