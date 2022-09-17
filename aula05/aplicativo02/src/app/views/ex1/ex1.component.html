@@ -1,0 +1,23 @@
+<hr>
+
+<h3>EXERCÍCIO 1</h3>
+
+<input type="text" [(ngModel)]="texto1">
+<input type="text" [(ngModel)]="texto2">
+
+<div>
+    {{obterTexto()}}
+</div>
+
+
+<h4>Versão 2 do Exercício 1</h4>
+<input type="number" [(ngModel)]="valor1">
+<input type="number" [(ngModel)]="valor2">
+
+<div>
+    {{valor1 * valor2}}
+</div>
+
+<div>
+    <button (click)="limparTexto();">Limpar</button>
+</div>

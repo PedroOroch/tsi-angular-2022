@@ -1,0 +1,91 @@
+<h1>Exemplos de Duas vias</h1>
+
+
+<div>
+    <h4>Exemplo 1 </h4>
+    <input type="text" [(ngModel)]="nome">
+
+    <div>
+        {{nome}}
+    </div>
+
+
+    <button (click)="limparNome();">Limpar</button>
+</div>
+<div>
+    <hr>
+    <h4>Exemplo 2</h4>
+    <input type="number" name="" id="" [(ngModel)]="valor1"> +
+    <input type="number" name="" id="" [(ngModel)]="valor2">
+    <div>
+        {{valor1 + valor2}}
+    </div>
+
+    <button (click)="limparNome();">Limpar</button>
+</div>
+<div>
+    <hr>
+    <h4>Exemplo 3</h4>
+    <input type="text" name="" id="" [(ngModel)]="nome" placeholder="Nome">
+    <input type="text" name="" id="" [(ngModel)]="sobrenome" placeholder="Sobrenome">
+    <div>
+        {{ obterNomeCompleto() }}
+    </div>
+
+    <button (click)="limparNome();">Limpar</button>
+</div>
+
+<div>
+    <hr>
+    <h4>Exemplo 4</h4>
+    <input type="color" [(ngModel)]="color">
+    <div style="height: 100px; background-color: {{color}}"></div>
+
+</div>
+
+<div>
+    <hr>
+    <h4>Exemplo 5</h4>
+    <select [(ngModel)]="generoJogo">
+      <option value="terror">Terror</option>
+      <option value="estrategia">Estratégia</option>
+      <option value="corrida">Corrida</option>
+      <option value="luta">Luta</option>
+    </select>
+    <div>
+        <img src="assets/{{generoJogo}}.jpg" alt="" width="200px">
+    </div>
+
+</div>
+<div>
+    <hr>
+    <h4>Exemplo 6</h4>
+    <div>
+        <input type="checkbox" [(ngModel)]="contatoTelefone" id="contatoTelefone">
+        <label for="contatoTelefone">Contato Por Telefone</label>
+    </div>
+
+    <div>
+        <input type="checkbox" [(ngModel)]="contatoEmail" id="contatoEmail">
+        <label for="contatoEmail">Contato Por Email</label>
+    </div>
+
+    <div>Contato Por telefone: {{contatoTelefone}}</div>
+    <div>Contato Por email: {{contatoEmail}}</div>
+
+</div>
+<div>
+    <hr>
+    <h4>Exemplo 7</h4>
+
+    <input type="radio" value="guerreiro" id="classe-guerreiro" [(ngModel)]="classeHeroi">
+    <label for="classe-guerreiro">Guerreiro</label>
+    <input type="radio" value="mago" id="classe-mago" [(ngModel)]="classeHeroi">
+    <label for="classe-mago">Mago</label>
+    <input type="radio" value="arqueiro" id="classe-arqueiro" [(ngModel)]="classeHeroi">
+    <label for="classe-arqueiro">Arqueiro</label>
+
+    <div>
+        {{classeHeroi}}
+    </div>
+</div>
