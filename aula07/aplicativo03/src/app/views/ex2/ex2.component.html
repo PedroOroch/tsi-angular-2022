@@ -1,0 +1,28 @@
+<h3>Exercício 2</h3>
+
+<h4>Selecione o contato</h4>
+
+<label for="ctt"></label>
+<select name="contato" id="ctt" [(ngModel)]="ctt">
+  <option value="wpp">What's App</option>
+  <option value="email">E-mail</option>
+</select>
+
+
+<div *ngIf="ctt == 'wpp'">
+    <div>
+        <a href="#">ZAP ZAP</a>
+    </div>
+</div>
+
+<div *ngIf="ctt == 'email'">
+    <input type="email" placeholder="exemplo@exemplo.com">
+    <div>
+        <textarea name="texto" id="txt" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+</div>
+
+<hr>

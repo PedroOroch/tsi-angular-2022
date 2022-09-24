@@ -1,0 +1,18 @@
+<h4>ngIf</h4>
+
+<h3>Exercício 1</h3>
+
+<input type="number" placeholder="Digite um número" [(ngModel)]="nUser">
+
+<div *ngIf="nUser == 0">
+    ZERO
+</div>
+<div *ngIf="nUser > 0">
+    POSITIVO!
+</div>
+<div *ngIf="nUser < 0">
+    NEGATIVO!
+</div>
+
+
+<hr>
