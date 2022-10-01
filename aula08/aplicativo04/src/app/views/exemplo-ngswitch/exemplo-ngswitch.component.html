@@ -1,0 +1,14 @@
+<h3>EXEMPLO DE NGSWITCH</h3>
+
+<input type="text" [(ngModel)]="carro">
+
+
+<div [ngSwitch]="carro">
+    <img *ngSwitchCase="'honda'" src="assets/honda.png" alt="" width="400px">
+    <img *ngSwitchCase="'dodge'" src="assets/dodge.png" alt="" width="400px">
+    <img *ngSwitchCase="'lamborghini'" src="assets/lamborghini.png" alt="" width="400px">
+    <img *ngSwitchCase="'mazda'" src="assets/mazda.png" alt="" width="400px">
+    <img *ngSwitchDefault src="assets/nfsU.png" alt="" width="400px">
+</div>
+
+<hr>

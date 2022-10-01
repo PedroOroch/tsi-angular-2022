@@ -1,0 +1,24 @@
+<h3>EXERCÍCIO 1</h3>
+
+<input type="text" placeholder="Digite um Canal do youtube" [(ngModel)]="canal">
+
+<div [ngSwitch]="canal">
+    <div *ngSwitchCase="'cblol'">
+        CAMPEONATO BRASILEIRO DE LEAGUE OF LEGENDS
+        <a href="https://www.youtube.com/c/CBLOL" target="_blank">CLIQUE AQUI</a>
+    </div>
+    <div *ngSwitchCase="'xracing'">
+        XRACING VIDEOS
+        <a href="https://www.youtube.com/c/XracingVideos" target="_blank">CLIQUE AQUI</a>
+    </div>
+    <div *ngSwitchCase="'the weeknd'">
+        THE WEEKND
+        <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" target="_blank">CLIQUE AQUI</a>
+    </div>
+    <div *ngSwitchCase="'my mechanics'">
+        MY MECHANICS
+        <a href="https://www.youtube.com/c/mymechanics" target="_blank">CLIQUE AQUI</a>
+    </div>
+</div>
+
+<hr>
