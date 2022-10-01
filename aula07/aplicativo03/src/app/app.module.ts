@@ -11,6 +11,8 @@ import { Ex3Component } from './views/ex3/ex3.component';
 import { ExemploNgForComponent } from './views/exemplo-ng-for/exemplo-ng-for.component';
 import { NgForEx1Component } from './views/ng-for-ex1/ng-for-ex1.component';
 import { NgForEx2Component } from './views/ng-for-ex2/ng-for-ex2.component';
+import { Ex6Component } from './views/ex6/ex6.component';
+import { Ex7Component } from './views/ex7/ex7.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { NgForEx2Component } from './views/ng-for-ex2/ng-for-ex2.component';
     ExemploNgForComponent,
     NgForEx1Component,
     NgForEx2Component,
+    Ex6Component,
+    Ex7Component,
   ],
   imports: [
     BrowserModule,
