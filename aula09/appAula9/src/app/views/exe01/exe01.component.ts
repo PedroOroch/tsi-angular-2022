@@ -12,27 +12,12 @@ export class Exe01Component implements OnInit
 
   jogos: Jogo[] = [];
   jogoSelecionado?: Jogo;
+  estaEditando = false;
 
   constructor(private jogoService: JogoService)
   {
 
-    const JOGO = new Jogo();
-    JOGO.nome = 'The Legend of Zelda';
-    JOGO.genero = 'Aventura / RPG';
-    JOGO.dataLanc = '2017';
-    JOGO.empresa = 'Nintendo';
-    JOGO.plataforma = 'Nintendo Switch';
 
-    jogoService.inserir(JOGO);
-
-    const JOGO2 = new Jogo();
-    JOGO2.nome = 'God of War';
-    JOGO2.genero = 'Hack n Slash / RPG / Aventura';
-    JOGO2.dataLanc = '2018';
-    JOGO2.empresa = 'Santa Monica';
-    JOGO2.plataforma = 'PS4';
-
-    jogoService.inserir(JOGO2);
   }
 
   ngOnInit(): void {
@@ -46,6 +31,41 @@ export class Exe01Component implements OnInit
  selecionarJogo(jogo: Jogo)
  {
   this.jogoSelecionado = jogo;
+  this.estaEditando = true;
  }
+
+  cancelar() {
+    this.jogoSelecionado = undefined;
+    this.atualizaLista();
+  }
+
+  salvar()
+  {
+    if(this.estaEditando) {
+      this.jogoService.atualizar(this.jogoSelecionado);
+
+    } else {
+      this.jogoService.inserir(this.jogoSelecionado)
+    }
+
+    this.cancelar();
+
+  }
+
+  novo ()
+  {
+    this.jogoSelecionado  = new Jogo();
+    this.estaEditando = false;
+  }
+
+  excluir(id?: number)
+  {
+    if(!id) {
+      return;
+    }
+
+    this.jogoService.remover(id);
+    this.atualizaLista();
+  }
 
 }

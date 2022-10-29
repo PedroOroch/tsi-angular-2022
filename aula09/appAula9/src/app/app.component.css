@@ -1,0 +1,26 @@
+header {
+    background: rgb(57, 57, 57);
+    background: linear-gradient(180deg, rgba(57, 57, 57, 1) 0%, rgba(13, 13, 13, 1) 100%);
+    padding: 10px;
+}
+
+a {
+    background-color: rgb(95, 62, 132);
+    padding: 5px;
+    color: rgb(219, 181, 255);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.8s;
+}
+
+a:hover {
+    background-color: rgb(219, 181, 255);
+    color: rgb(95, 62, 132);
+}
+
+main {
+    background-color: rgba(137, 43, 226, 0.138);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
