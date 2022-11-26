@@ -1,0 +1,32 @@
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fab-add {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+}
+
+.form {
+    display: block;
+}
+
+.name {
+    width: 20%;
+    margin-left: 16px;
+}
+
+.cpf {
+    width: 20%;
+    margin-left: 16px;
+}
+
+.button {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    margin-left: 16px;
+}
